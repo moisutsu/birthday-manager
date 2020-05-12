@@ -9,10 +9,9 @@ const Component: React.FCX = () => {
   return (
     <main>
       <h1>
-        Index Page!
+        Add Page!
       </h1>
-      <Link href="/add"><a>Add</a></Link>
-      <Link href="/remove"><a>Remove</a></Link>
+      <Link href="/"><a>Home</a></Link>
     </main>
   )
 }
