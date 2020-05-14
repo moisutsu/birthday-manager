@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-import Header from "src/components/Header";
+import Layout from "src/layouts";
 import BirthdayList from "src/components/BirthdayList";
 
 import { baseStyle } from "src/styles";
@@ -15,33 +15,34 @@ const dummyPeopleInfoArray: PeopleInfo[] = [
     date: {
       year: 2000,
       month: 1,
-      day: 1
-    }
+      day: 1,
+    },
   },
   {
     name: "hanako",
     date: {
       year: 2010,
       month: 11,
-      day: 14
-    }
-  }
+      day: 14,
+    },
+  },
 ];
 
 const Component: React.FCX = () => {
   return (
     <>
-      <Header />
-      <main>
-        <h1>Index Page!</h1>
-        <BirthdayList peopleInfoArray={dummyPeopleInfoArray}/>
-        <Link href="/add">
-          <a>Add</a>
-        </Link>
-        <Link href="/remove">
-          <a>Remove</a>
-        </Link>
-      </main>
+      <Layout>
+        <main>
+          <h1>Index Page!</h1>
+          <BirthdayList peopleInfoArray={dummyPeopleInfoArray} />
+          <Link href="/add">
+            <a>Add</a>
+          </Link>
+          <Link href="/remove">
+            <a>Remove</a>
+          </Link>
+        </main>
+      </Layout>
     </>
   );
 };
