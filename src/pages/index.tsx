@@ -11,6 +11,7 @@ import { PeopleInfo } from "src/types";
 
 const dummyPeopleInfoArray: PeopleInfo[] = [
   {
+    id: "a",
     name: "taro",
     date: {
       year: 2000,
@@ -19,6 +20,7 @@ const dummyPeopleInfoArray: PeopleInfo[] = [
     },
   },
   {
+    id: "b",
     name: "hanako",
     date: {
       year: 2010,
