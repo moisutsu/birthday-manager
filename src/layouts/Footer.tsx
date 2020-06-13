@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const Component: React.FCX = ({ className }) => (
-  <footer className={className}>
+const Component: React.FCX = () => (
+  <footer>
     Copyright © 2020 moisutsu All Rights Reserved.
   </footer>
 );
