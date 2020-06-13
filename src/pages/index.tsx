@@ -34,12 +34,18 @@ const Component: React.FCX = () => {
   const AddPeopleInfo = (info: PeopleInfo) => {
     setPeopleInfoArray(peopleInfoArray.concat([info]));
   };
+  const RemovePeopleInfo = (id: string) => {
+    setPeopleInfoArray(peopleInfoArray.filter(e => e.id !== id));
+  };
   return (
     <>
       <Layout>
         <main>
           <h1>Index Page!</h1>
-          <BirthdayList peopleInfoArray={peopleInfoArray} />
+          <BirthdayList
+            peopleInfoArray={peopleInfoArray}
+            removePeopleInfo={RemovePeopleInfo}
+          />
           <AddButton addPeopleInfo={AddPeopleInfo} />
         </main>
       </Layout>
