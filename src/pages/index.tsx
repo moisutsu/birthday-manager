@@ -38,7 +38,6 @@ const Component: React.FCX = () => {
           <h1>Index Page!</h1>
           <BirthdayList peopleInfoArray={peopleInfoArray} />
           <AddButton />
-          <p>Remove</p>
         </main>
       </Layout>
     </>
