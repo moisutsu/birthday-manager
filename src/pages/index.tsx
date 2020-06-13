@@ -1,5 +1,5 @@
 // import Head from 'next/head';
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Layout from "src/layouts";
 import BirthdayList from "src/components/BirthdayList";
@@ -29,12 +29,13 @@ const dummyPeopleInfoArray: PeopleInfo[] = [
 ];
 
 const Component: React.FCX = () => {
+  const [peopleInfoArray, setPeopleInfoArray] = useState(dummyPeopleInfoArray);
   return (
     <>
       <Layout>
         <main>
           <h1>Index Page!</h1>
-          <BirthdayList peopleInfoArray={dummyPeopleInfoArray} />
+          <BirthdayList peopleInfoArray={peopleInfoArray} />
           <p>add</p>
           <p>Remove</p>
         </main>
