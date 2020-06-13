@@ -11,6 +11,7 @@ const Component: React.FCX<Props> = ({ name, date }) => {
     <li>
       <p>{name}</p>
       <p>{date}</p>
+      <button>削除</button>
     </li>
   );
 };
