@@ -37,12 +37,8 @@ const Component: React.FCX = () => {
         <main>
           <h1>Index Page!</h1>
           <BirthdayList peopleInfoArray={dummyPeopleInfoArray} />
-          <Link href="/add">
-            <a>Add</a>
-          </Link>
-          <Link href="/remove">
-            <a>Remove</a>
-          </Link>
+          <p>add</p>
+          <p>Remove</p>
         </main>
       </Layout>
     </>
