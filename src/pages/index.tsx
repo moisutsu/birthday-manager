@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Layout from "src/layouts";
 import BirthdayList from "src/components/BirthdayList";
+import AddButton from "src/components/AddButton";
 
 import { baseStyle } from "src/styles";
 import { PeopleInfo } from "src/types";
@@ -36,7 +37,7 @@ const Component: React.FCX = () => {
         <main>
           <h1>Index Page!</h1>
           <BirthdayList peopleInfoArray={peopleInfoArray} />
-          <p>add</p>
+          <AddButton />
           <p>Remove</p>
         </main>
       </Layout>
