@@ -31,13 +31,16 @@ const dummyPeopleInfoArray: PeopleInfo[] = [
 
 const Component: React.FCX = () => {
   const [peopleInfoArray, setPeopleInfoArray] = useState(dummyPeopleInfoArray);
+  const AddPeopleInfo = (info: PeopleInfo) => {
+    setPeopleInfoArray(peopleInfoArray.concat([info]));
+  };
   return (
     <>
       <Layout>
         <main>
           <h1>Index Page!</h1>
           <BirthdayList peopleInfoArray={peopleInfoArray} />
-          <AddButton />
+          <AddButton addPeopleInfo={AddPeopleInfo} />
         </main>
       </Layout>
     </>

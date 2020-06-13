@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Component: React.FCX = () => {
   return (
     <header>
-        <h1>Birthday-Manager</h1>
+      <h1>Birthday-Manager</h1>
     </header>
   );
 };
