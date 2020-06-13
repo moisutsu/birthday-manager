@@ -1,13 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
 
 const Component: React.FCX = () => {
   return (
     <header>
-      <Link href="/">
-        <a>Birthday-Manager</a>
-      </Link>
+        <h1>Birthday-Manager</h1>
     </header>
   );
 };
