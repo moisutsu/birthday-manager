@@ -1,8 +1,6 @@
 // import Head from 'next/head';
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
-
 import Layout from "src/layouts";
 import BirthdayList from "src/components/BirthdayList";
 
