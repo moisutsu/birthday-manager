@@ -2,10 +2,16 @@
   "extends": [
     "config:base"
   ],
-  "packageRules": [
-    {
-      "updateTypes": ["major", "minor", "patch", "pin", "digest", "lockFileMaintenance", "rollback", "bump"],
-      "automerge": true
-    }
-  ]
+  "patch": {
+    "automerge": true
+  },
+  "pin": {
+    "automerge": true
+  },
+  "minor": {
+    "automerge": true
+  },
+  "digest": {
+    "automerge": true
+  }
 }
