@@ -1,17 +1,3 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "patch": {
-    "automerge": true
-  },
-  "pin": {
-    "automerge": true
-  },
-  "minor": {
-    "automerge": true
-  },
-  "digest": {
-    "automerge": true
-  }
+  "extends": ["@hpprc:maintenance"]
 }
